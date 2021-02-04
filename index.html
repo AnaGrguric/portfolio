@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100;200;800&display=swap" rel="stylesheet">
 </head>
-<body class="" onscroll="scrollNav()">
+<body>
 
 	<header class="container-fluid justify-content-between">
 		<nav id="mySidenav" class="sidenav mobile">
@@ -25,13 +25,19 @@
 	</header>
 
 	<section class="container-fluid">
-		<div id="home"></div>
+		<div id="home">
+			<h1 class="welcome col-sm-12">WEB PORTFOLIO<br>
+				<a href="#about">
+					<img src="Images/down-arrow.png" class="arrow" onclick="scroll()" alt="arrow" style="width: 64px; height: auto;">
+				</a>
+			</h1>
+		</div>
 	</section>
 	
 	<section class="container justify-content-center" id="about">
 		<div class="row">
 			<div class="col-sm-6 text-center">
-				   <img src="Images/IMG-20200521-WA0028.png" id="ana_img">
+				<img src="Images/IMG-20200521-WA0028.png" id="ana_img">
 			</div>
 			<div class="col-sm-6 align-self-center">
 				   <h2>ABOUT ME</h2>
@@ -40,43 +46,43 @@
 				and design. I love spendig my free time
 				in nature, running, exercising and
 				hanging out with friends and family and DOGs.</p>
-				<button class="text-center cv_button" ><a href="cv_ana_grguric.pdf">Download CV</a></button>
+					<button class="text-center cv_button" ><a href="cv_ana_grguric.pdf">Download CV</a></button>
 			</div>
 		</div>
 	</section>
 
-<section class="container justify-content-center" id="skills">
-	<div class="container text-center">
-		<h2>SKILLS</h2>
-<div class="skills_logo_icons">
-	<img src="Images/html.png" class="logo col" alt="">
-	<img src="Images/css.png" class="logo col" alt="">
-	<img src="Images/js.png" class="logo col" alt="">
-	<img src="Images/bootstrap.png" class="logo col" alt="">
-	<img src="Images/sass.png" class="logo col" alt="">
-	<img src="Images/figma.png" class="logo-figma col" alt="">
-</div>
-	</div>
-</section>
+	<section class="container justify-content-center" id="skills">
+		<div class="container text-center">
+			<h2>SKILLS</h2>
+			<div class="skills_logo_icons">
+				<img src="Images/html.png" class="logo col" alt="">
+				<img src="Images/css.png" class="logo col" alt="">
+				<img src="Images/js.png" class="logo col" alt="">
+				<img src="Images/bootstrap.png" class="logo col" alt="">
+				<img src="Images/sass.png" class="logo col" alt="">
+				<img src="Images/figma.png" class="logo-figma col" alt="">
+			</div>
+		</div>
+	</section>
 
 
-<section class="container" id="projects">
-	<h2 class="text-center">PROJECTS</h2>
-	<div class="project text-center">
-		<h3 class="col-sm-12">HIKING APP</h3>
-	       <div class="col-sm-12">
-			   <img src="Images/samoborskogorje.png" class="mx-auto">
-	       </div>
-	   <button class="align-self-center"><a href="https://www.figma.com/proto/3s0agQ9URiC1aSpmrmkIon/App?node-id=352%3A77&scaling=scale-down">VIEW PROTOTYPE</a></button>
-	</div>
+	<section class="container" id="projects">
+		<h2 class="text-center">PROJECTS</h2>
+		<div class="project text-center">
+			<h3 class="col-sm-12">HIKING APP</h3>
+	       	<div class="col-sm-12">
+			   	<img src="Images/samoborskogorje.png" class="mx-auto">
+	       	</div>
+	   	<button class="align-self-center"><a href="https://www.figma.com/proto/3s0agQ9URiC1aSpmrmkIon/App?node-id=352%3A77&scaling=scale-down">VIEW PROTOTYPE</a></button>
+		</div>
 
-	<div class="project text-center">
-		<h3 class="col-sm-12">COACH4YOU.HR</h3>
-	       <div class="col-sm-12">
+		<div class="project text-center">
+			<h3 class="col-sm-12">COACH4YOU.HR</h3>
+	       	<div class="col-sm-12">
 			   <img src="Images/coach4you_mockup.png" class="mx-auto">
-	       </div>
-	   <button class="align-self-center"><a href="http://coach4you.hr/">VISIT WEBSITE</a></button>
-	</div>
+	       	</div>
+	   		<button class="align-self-center"><a href="http://coach4you.hr/">VISIT WEBSITE</a></button>
+		</div>
 
 	<div class="project text-center seantria">
 		<h3 class="col-sm-12">SEANTRIA.HR</h3>
@@ -93,7 +99,7 @@
 	    </div>
 	   <button><a href="http://www.dm2-web.com/t1/index.html">VISIT WEBSITE</a></button>
 	
-</section>
+	</section>
 
 <section class="container-fluid text-center" id="contact">
 	<button class="big_btn"><a href="mailto:ana.grguric97@gmail.com">CONTACT ME</a></button>
