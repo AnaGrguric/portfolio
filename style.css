@@ -52,7 +52,7 @@ body {
 
 .nav {
 	position: fixed;
-	background-color: #b5804ee0;;
+	background-color: #b5804ee0;
 	color: #ffffff;
 	box-shadow: black;
 	z-index: 9999;
@@ -162,7 +162,7 @@ button:hover {
 	color: #b5804e;
 	background-color: transparent;
 	border-color: #b5804e;
-}
+} 
 
 button a:hover {
 	background-color: transparent;
@@ -211,15 +211,18 @@ button a:hover {
 #projects h2 {
 	padding: 1.5em;
 	padding-bottom: 0px;
-	
 }
 
 #projects h3 {
 	padding-bottom: 1em;
 }
 
+.margin-top-20 {
+	margin-top: 20px;
+}
+
 #projects button {
-	font-size: 24px;
+	font-size: 16px;
 	font-weight: bold;
 	padding: 0.6em;
 	border-radius: 70px;
