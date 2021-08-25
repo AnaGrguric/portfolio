@@ -440,6 +440,16 @@ a i:hover {
     margin: 0px;
   }
 
+  .sidenav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidenav .closebtn {
+    top: 160px;
+    right: inherit;
+  }
+
   #home {
     height: 100vh;
   }
