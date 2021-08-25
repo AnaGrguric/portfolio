@@ -10,48 +10,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100;200;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-	<header class="container-fluid justify-content-between">
+	<div class="cursor"></div>
+	<header class="header container-fluid justify-content-between">
 		<nav id="mySidenav" class="sidenav mobile">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="#about">About</a>
-			<a href="#projects">Work</a>
-			<a href="#contact">Contact</a>
+			<a href="javascript:void(0)" class="closebtn el-nav" onclick="closeNav()">&times;</a>
+			<a href="#about" onclick="closeNav()" class="el-nav">About</a>
+			<a href="#projects" onclick="closeNav()" class="el-nav">Work</a>
+			<a href="#contact" onclick="closeNav()" class="el-nav">Contact</a>
 		</nav>
-		<div class="container-fluid nav justify-content-between">
-			<a href="#home"><h6>ANA GRGURIC</h6></a>
-			<span class="" style="font-size:30px;cursor:pointer" onclick="openNav()">?</span>
+		<div class="container nav justify-content-between">
+			<a href="#home" class="el"><h6>ANA GRGURIC</h6></a>
+			<span class="el open-nav" onclick="openNav()">?</span>
 		</div>  
 	</header>
 
-	<section class="container-fluid">
+	<section class="container">
 		<div id="home">
-			<h1 class="welcome col-sm-12">WEB PORTFOLIO<br>
-				<a href="#about">
-					<img src="Images/down-arrow.png" class="arrow" onclick="scroll()" alt="arrow" style="width: 48px; height: auto;">
-				</a>
-			</h1>
+			<h5 class="welcome col-sm-12 el">WELCOME</h5>
+			<h3 class="welcome col-sm-12 el">To my web portfolio</h3>
+			<a href="#about" class="arrow-position">
+				<img src="Images/down-arrow.png" class="arrow el" onclick="scroll()" alt="arrow" style="width: 32px; height: auto;">
+			</a>
 		</div>
 	</section>
 	
-	<section class="container justify-content-center" id="about">
+	<section class="container-fluid" id="about">
 		<div class="row">
-			<div class="col-sm-6 text-center">
-				<img src="Images/IMG-20200521-WA0028.png" id="ana_img">
+			<div class="mx-auto align-self-left">
+				<img src="Images/IMG-20210803-WA0003.jpg" id="ana_img">
 			</div>
-			<div class="col-sm-6 align-self-center">
+			<div class="align-self-center col" style="margin-left: 40px;">
 				   <h2>ABOUT ME</h2>
 				   <h3>ANA GRGURIC</h3>
 				   <p>Hi, I'm Ana<br> As a student at Faculty of Graphic Arts I am learning about new tehnologies. My primary interests are web development
 				and design. I love spendig my free time
 				in nature, running, exercising and
-				hanging out with friends and family and DOGs.</p>
+				hanging out with friends, family and dogs.</p>
+				<div class="row">
+				<p class="col">
+					Tehnologies I'm comfortable to work with:</br>
+					<img src="images/html.png" width="20px" height="auto"> HTML5</br>
+					<img src="images/css.png" width="20px"> CSS3</br>
+					<img src="images/sass.png" width="20px"> Sass</br>
+					<img src="images/js.png" width="20px"> Vanilla JS</br>
+					<img src="images/react.png" width="20px"> React - basics</br>
+					<img src="images/git.png" width="20px"> basic usage of git</br>
+				</p>
+				<p class="col">
+					Skills I want to improve:</br>
+					<img src="images/js.png" width="20px"> JS advanced concepts</br>
+					<img src="images/react.png" width="20px"> React</br>
+					<img src="images/lock.png" width="20px"> Learn more about web security</br>
+				</p>
+				</div>
 					<button class="text-center cv_button" ><a href="cv_ana_grguric.pdf">Download CV</a></button>
 			</div>
 		</div>
 	</section>
 
-	<section class="container justify-content-center" id="skills">
+	<section class="container-fluid justify-content-center" id="skills">
 		<div class="container text-center">
 			<h2>SKILLS</h2>
 			<div class="skills_logo_icons">
@@ -67,8 +84,9 @@
 	</section>
 
 
-	<section class="container" id="projects">
+	<section class="container-fluid" id="projects">
 		<h2 class="text-center">PROJECTS</h2>
+		<div class="projects-horizontal">
 		<div class="project text-center">
 			<h3 class="col-sm-12">HIKING APP</h3>
 	       	<div class="col-sm-12">
@@ -85,24 +103,25 @@
 	       	<div class="col-sm-12">
 			   <img src="Images/coach4you_mockup.png" class="mx-auto">
 	       	</div>
-	   		<button class="align-self-center"><a href="http://coach4you.hr/">VISIT WEBSITE</a></button>
+	   		<button class="align-self-center margin-top-20"><a href="http://coach4you.hr/">VISIT WEBSITE</a></button>
 		</div>
 
-	<div class="project text-center seantria">
-		<h3 class="col-sm-12">SEANTRIA.HR</h3>
-		<div class="col-sm-12">
-			<img src="Images/seantria_mockup.png" class="mx-auto">
-	    </div>
-	    <button id="sean"><a href="https://www.seantria.hr">VISIT WEBSITE</a></button>
+		<div class="project text-center seantria">
+			<h3 class="col-sm-12">SEANTRIA.HR</h3>
+			<div class="col-sm-12">
+				<img src="Images/seantria_mockup.png" class="mx-auto">
+	    	</div>
+	    	<button id="sean" class="align-self-center margin-top-20"><a href="https://www.seantria.hr">VISIT WEBSITE</a></button>
+		</div>
+	
+		<div class="project text-center">
+			<h3 class="col-sm-12">COLLEGE PROJECT</h3>
+	    	<div class="col-sm-12">
+				<img src="Images/vsco_mockup.png">
+	    	</div>
+	   		<button class="align-self-center margin-top-20"><a href="http://www.dm2-web.com/t1/index.html">VISIT WEBSITE</a></button>
+		</div>
 	</div>
-	
-	<div class="project text-center">
-		<h3 class="col-sm-12">COLLEGE PROJECT</h3>
-	    <div class="col-sm-12">
-			  <img src="Images/vsco_mockup.png">
-	    </div>
-	   <button><a href="http://www.dm2-web.com/t1/index.html">VISIT WEBSITE</a></button>
-	
 	</section>
 
 <section class="container-fluid text-center" id="contact">
