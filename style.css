@@ -55,7 +55,7 @@ body {
 .sidenav {
   height: 100%;
   width: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
@@ -195,6 +195,10 @@ h3 {
 #about img {
   max-width: 400px;
   z-index: 0.5;
+}
+
+.info-about {
+  margin-left: 40px;
 }
 
 button {
@@ -432,6 +436,11 @@ a i:hover {
 
   #about img {
     max-width: 100%;
+  }
+
+  .info-about {
+    margin-left: 0px;
+    margin: 16px;
   }
 
   .nav {
