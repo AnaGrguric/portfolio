@@ -153,6 +153,11 @@ h3.welcome {
   animation-iteration-count: 10;
 }
 
+.not-finished {
+  color: #ffffff;
+  padding-top: 8px;
+}
+
 @keyframes animation {
   0% {
     transform: scale(1.2);
